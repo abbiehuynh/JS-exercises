@@ -10,28 +10,45 @@
 // But make sure you understand why the correct answer is right.
 
 // Exercise 1. Make an empty array named animals
+    let animals = [];
 
 // Exercise 2. Add the string "frog" to the array
+    animals.unshift("frog");
+    // console.log(animals);
 
 // Exercise 3. Add 4 more animals of your choice to the array. Try to add all of them in one line of code.
+    animals.push("cat", "dog", "bear", "bunny");
+    // console.log(animals);
 
 // Exercise 4. Update the first item in the array to be "gorilla"
+    animals.unshift("gorilla");
+    // console.log(animals);
 
 // Exercise 5. Print the number of items in the array (use the array property that will give you this information)
+    let numOfAnimals = animals.length;
+        // console.log(numOfAnimals);
 
 // Exercise 6. Print the first item in the array
+    // console.log(animals[0]);
 
 // Exercise 7. Print the last item in the array (as part of your answer, use the same array property you used in exercise 5 above)
+    // console.log(animals[animals.length - 1]);
 
 // Exercise 8. Remove the last item from the array
+    animals.pop();
+    // console.log(animals);
 
 // Exercise 9. Now make a new array named assortedThings that contains at least 3 strings and 3 numbers.
+    let assortedThings = ["pen", "paper", "marker", 1, 2, 3];
 
 // Exercise 10. Write a for loop that iterates through the assortedThings array and prints each index and item, such as:
 // Item #0 is potato
 // Item #1 is 4
 // Item #2 is Hello World
 // ...
+
+    for (let i = 0; i < assortedThings.length; i++); 
+    // console.log("Item #",i,"is ", assortedThings[i]); 
 
 // Exercise 11. Write a function that takes an array of numbers as a parameter. For each number in the array,
 // print the number and "BIG" if it's over 100, "small" if it's between 0 and 100, and "negative" if
