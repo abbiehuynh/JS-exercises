@@ -47,8 +47,9 @@
 // Item #2 is Hello World
 // ...
 
-    for (let i = 0; i < assortedThings.length; i++); 
-    // console.log("Item #",i,"is ", assortedThings[i]); 
+    for (let i = 0; i < assortedThings.length; i++) {
+    // console.log("Item #",i,"is ",assortedThings[i]); 
+    }
 
 // Exercise 11. Write a function that takes an array of numbers as a parameter. For each number in the array,
 // print the number and "BIG" if it's over 100, "small" if it's between 0 and 100, and "negative" if
@@ -60,20 +61,52 @@
 //
 // Then write some function calls you would use to test your function.
 
+    function arrOfNumbers (arrOfNum) {
+        for (let i = 0; i < arrOfNum.length; i++) {
+            if (arrOfNum[i] > 100) {
+                // console.log(arrOfNum[i] + " BIG")
+            } else if (arrOfNum[i] >= 0) {
+                // console.log(arrOfNum[i] + " small")
+            } else if (arrOfNum[i] < 0) {
+                //  console.log(arrOfNum[i] + " negative")
+            }
+        }
+    } 
+    arrOfNumbers([-5,10,250])
+    arrOfNumbers([0,100])
+    arrOfNumbers([1,101,750,20]) 
+    arrOfNumbers([-15,-345])
+
 // Exercise 12. Make an object called me that contains the following keys: name, favoriteAnimal, favoriteNumber
 // The values of those keys can be whatever you choose.
+    let me = {
+        name: "Abbie",
+        favoriteAnimal: "cat",
+        favoriteNumber: 9,
+    };
+    // console.log(me);
 
 // Exercise 13. Add another 2 keys and values to the object (you choose what they are)
 
+    me["hobby"] = "arts and crafts";
+    me["food"] = "ice cream";
+    // console.log(me);
+
 // Exercise 14. Update the favoriteAnimal value to something different
+    me["favoriteAnimal"] = "bunny";
+    // console.log(me);
 
 // Exercise 15. Print the value of favoriteAnimal.
 // Note: there are at least 2 ways to get the value of a key, try to write both.
+    // console.log(me.favoriteAnimal);
+    // console.log(me["favoriteAnimal"]);
 
 // Congrats, you made it to the end!
 // Did you find this easy or hard? If you used references, which ones helped you?
 // Please answer in a comment below.
-//
+
+// I found most of these exercises easy, and a few challenging, such as Exercise 11. 
+// For these exercises, I used resources such as Stack Overflow, MDN Web Docs, & EnableGeek.
 
 // Email your file to the course staff,
 // or commit your file to GitHub and email us a link.
