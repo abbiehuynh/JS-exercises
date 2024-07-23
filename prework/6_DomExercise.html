@@ -44,24 +44,44 @@ For this exercise, don't change the HTML code given.
 
   <script type="text/javascript">
     // Exercise 1: Select the element with id "id2" and change the text inside it to "Here's some new text"
+      document.getElementById("id2").innerHTML = "Here's some new text";
 
     // Exercise 2: Select the element with id "id1" and make the text inside it green.
+      document.getElementById("id1").style.color = "green";
 
     // Exercise 3: Select the elements that have the class "myClass". console.log the output.
+      let myClass = document.getElementsByClassName("myClass");
+      console.log(myClass);
 
     // Exercise 4: Select the children of the element with id "id1". console.log the output.
+      let childrenOfId1 = document.getElementById("id1").children;
+      console.log(childrenOfId1);
 
     // Exercise 5: Select all list items on the page. console.log the output.
+      let allListItems = document.querySelectorAll("li");
+      console.log(allListItems);
 
     // Exercise 6: Use JavaScript to find the *number* of list items on the page. console.log the output.
+      let numOfListItems = document.getElementsByTagName("li").length;
+      console.log(numOfListItems);
 
     // Exercise 7: Using JavaScript, create a list item and add it to the end of the ordered list.
-
+      let newListItem = document.createElement("li");
+      let textNewItemList = document.createTextNode("Cat");
+      newListItem.appendChild(textNewItemList);
+      document.getElementById("ol1").appendChild(newListItem);
+    
     // Exercise 8: Using JavaScript, make it so that when button1 is clicked,
     // an alert pops up saying "Hi from Techtonica".
+      document.getElementById("button1").addEventListener("click", returnString);
+
+      function returnString() {
+        alert("Hi from Techtonica");
+      }
 
     // Exercise 9: In your own words, write a few sentences explaining what the DOM is. Write your answer in a comment below:
-    //
+      // The DOM, or the Document Object Model is a programming interface (API) for web documents that allows change
+      // to document structure, style, and content. 
 
     // The next two exercises combine the DOM with other JavaScript you've learned. Try them for an extra challenge!
 
